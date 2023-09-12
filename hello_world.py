@@ -1,10 +1,9 @@
+def is_prime(number):
+    if number <= 1:
+        return False
+    for i in range(2, int(number ** 0.5) + 1):
+        if number % i == 0:
+            return False
+    return True
 
-
-def fibonacci(n):
-    fib_sequence = [0, 1]
-    while len(fib_sequence) < n:
-        next_num = fib_sequence[-1] + fib_sequence[-2]
-        fib_sequence.append(next_num)
-    return fib_sequence
-
-print(fibonacci(10))  # Print the first 10 Fibonacci numbers
+print(is_prime(17))  # Check if 17 is prime
