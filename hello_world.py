@@ -1,9 +1,7 @@
-def is_prime(number):
-    if number <= 1:
-        return False
-    for i in range(2, int(number ** 0.5) + 1):
-        if number % i == 0:
-            return False
-    return True
-
-print(is_prime(17))  # Check if 17 is prime
+def print_hello():
+    print("Hello World!!")
+def print_KIT():
+    print("Kumoh National Institute of Technology.")
+if __name__ == '__main__':
+    print_KIT()
+    print_hello()
